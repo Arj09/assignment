@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.foodtag{
+    width: 80%;
+    padding: 2px;
+    font-size: xx-large;
+    margin: 20px auto;
+}
+.container{
+    width: 80vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(15, 1fr);
+    margin: 20px auto;
+    overflow-x: scroll;
+
+    gap: 10px;
+
+}
+.box{
+    width: 250px;
+    height: 340px;
+    list-style: none;
+
+    .imgbox{
+        width: 250px;
+        height: 200px;
+        
+    }
+    .imgbox img{
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    .title{
+        padding: 5px;
+        font-size: large;
+    }
+    .subtitle{
+        padding: 5px;
+        font-size: small;
+    }
+    .action{
+        
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 5px;
+        list-style: none;
+       
+    }
+    .rate{
+        padding: 5px;
+    }
+    .addbtn{
+       
+        
+        border: 0.2px solid pink;
+        padding: 4px 8px;
+        color: pink;
+      
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+}
+.loading{
+    font-size: 4vw;
+    padding: 20px;
+    text-align: center;
+}
